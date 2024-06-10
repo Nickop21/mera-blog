@@ -4,6 +4,7 @@ import "./App.css";
 import { useDispatch, useSelector } from "react-redux";
 import { login, logout } from "./store/authSlice";
 import authservice from "./appwrite/auth";
+import {Header} from './components/index'
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -23,8 +24,11 @@ function App() {
 
   return (
    <>
+   <h1>smdc</h1>
+   {/* <Header/> */}
    {
-    !loading && (<div className="min-h-screen">Loading......</div>)
+    
+    // !loading && (<div className="min-h-screen">Loading......</div>)
    }
    </>
   );
